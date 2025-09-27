@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luento 2</title>
+</head>
+
+<body>
+    <h1>Kuvat, taulukot ja lomakkeet</h1>
+
+    <!-- table>tr*6>td*6  TEKEE VALMIIKS TON ALLA OLEVAN!!!!!!-->
+    <table border="1" width="200" style="margin-bottom: 45px;">
+        <caption>Esimerkkitaulukko</caption>
+        <thead>
+            <tr>
+                <th colspan="6">1 2 3 4 5 6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td rowspan="2">14<br>20</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>21</td>
+                <td colspan="2" rowspan="2">22&nbsp;&nbsp;&nbsp; 23 <br> 28&nbsp;&nbsp;&nbsp; 29</td>
+                <td>24</td>
+                
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>30</td>
+                
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- TÄHÄN ASTI -->
+    <!-- Alla lomakkeisiin liittyviä esimerkkejä -->
+
+    <form action="index.html" method="get">
+        <label for="enimi">Etunimi:</label><br>
+        <input type="text" name="etunimi" id="enimi"><br>
+        <br>
+        <input type="text" name="sukunimi" id="snimi" placeholder="Sukunimi:"><br>
+        <label for="email">Sähköposti:</label><br>
+        <input type="email" name="sposti" id="email"><br>
+        <label for="pwd">Salasana:</label><br>
+        <input type="password" name="pwd" id="pwd"><br>
+        <label for="saika">Syntymäaika:</label><br>
+        <input type="date" name="syntymaaika" id="saika"><br>
+
+        <p>Ruokailut:</p>
+        <input type="checkbox" name="aamu" id="aamu">
+        <label for="aamu">Aamupala</label><br>
+        <input type="checkbox" name="lounas" id="lounas">
+        <label for="lounas">Lounas</label><br>
+        <input type="checkbox" name="päivä" id="päivä">
+        <label for="päivä">Päivällinen</label><br>
+
+        <p>Sukupuoli:</p>
+        <input type="radio" name="spuoli" id="nainen" value="nainen" checked>
+        <label for="nainen">Nainen</label><br>
+        <input type="radio" name="spuoli" id="mies" value="mies">
+        <label for="mies">Mies</label><br>
+        <input type="radio" name="spuoli" id="muu" value="muu">
+        <label for="muu">Muu</label><br>
+        <br>
+
+        <label for="area">Erityistoiveesi:</label><br>
+        <textarea name="toiveet" id="area" cols="30" rows="10"></textarea><br>
+        <br>
+
+        <label for="valinta">Valitse näistä:</label><br>
+        <select name="valinta" id="valinta" multiple>
+            <option value="Valinta 1">Valinta 1</option>
+            <option value="Valinta 2">Valinta 2</option>
+            <option value="Valinta 3">Valinta 3</option>
+            <option value="Valinta 4">Valinta 4</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Lähetä">
+        <input type="reset" value="Tyhjennä">
+    </form>
+    </table>
+
+
+
+    <!--Linkkaus, kuvateksti, alt ym. kuva jutut-->
+    <p>
+        <img src="images/cat_small.jpg" alt="kuva kissasta"><br>
+        Kuvateksti tähän...
+    </p>
+    <p>
+        <a href="images/kitten.jpg" target="_blank">
+            <img src="images/kitten_small.jpg" alt="kuva kissasta">
+        </a>
+    </p>
+
+
+    <!--LISTAT-->
+
+    <h1>Listat</h1>
+    <h3>Unordered list - UL</h3>
+    <ul type="square">
+        <li><a href="#">Linkki1</a></li>
+        <li><a href="#">Linkki2</a></li>
+        <li><a href="#">Linkki3</a></li>
+        <li><a href="#">Linkki4</a>
+            <ul>
+                <li><a href="#">Linkki4.1</a></li>
+                <li><a href="#">Linkki4.1</a></li>
+            </ul>
+    </ul>
+    
+    <h3>Ordered list - OL</h3>
+    <ol type="a">
+        <li>Alkio1</li>
+        <li>Alkio2</li>
+        <li>Alkio3</li>
+        <li>Alkio4</li>
+    </ol>
+
+</body>
+
+</html>

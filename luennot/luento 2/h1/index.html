@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+</head>
+
+<body>
+    <form action="index.html">
+    <table>
+        <tr>
+            <td><label for="enimi">Etunimi:</label></td>
+            <td><input type="text" name="etunimi" id="enimi" placeholder="Etunimi"></td>
+        </tr>
+        <tr>
+            <td><label for="snimi">Sukunimi:</label></td>
+            <td><input type="text" name="sukunimi" id="snimi"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Sähköposti:</label></td>
+            <td><input type="email" name="sposti" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="pwd">Salasana:</label></td>
+            <td><input type="password" name="pwd" id="pwd"></td>
+        </tr>
+        <tr>
+            <td><label for="saika">Syntymäaika:</label></td>
+            <td><input type="date" name="syntymaaika" id="saika"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Ruokailut:</p>
+            </td>
+            <td><input type="checkbox" name="aamu" id="aamu">
+                <label for="aamu">Aamupala</label><br>
+                <input type="checkbox" name="lounas" id="lounas">
+                <label for="lounas">Lounas</label><br>
+                <input type="checkbox" name="päivä" id="päivä">
+                <label for="päivä">Päivällinen</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Sukupuoli:</p>
+            </td>
+            <td><input type="radio" name="spuoli" id="nainen" value="nainen" checked>
+                <label for="nainen">Nainen</label><br>
+                <input type="radio" name="spuoli" id="mies" value="mies">
+                <label for="mies">Mies</label><br>
+                <input type="radio" name="spuoli" id="muu" value="muu">
+                <label for="muu">Muu</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="area">Erityistoiveet:</label></td>
+            <td><textarea name="toiveet" id="area" cols="30" rows="10" placeholder="Kirjoittele tähän jotain"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="valinta">Valitse näistä:</label></td>
+            <td><select name="valinta" id="valinta" multiple>
+            <option value="Valinta 1">Valinta 1</option>
+            <option value="Valinta 2">Valinta 2</option>
+            <option value="Valinta 3">Valinta 3</option>
+            <option value="Valinta 4">Valinta 4</option>
+        </select></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Lähetä"></td>
+            <td></td>
+        </tr>
+    </table>
+    </form>
+</body>
+
+</html>
