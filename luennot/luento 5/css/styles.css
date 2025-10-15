@@ -9,9 +9,10 @@ body {
 }
 
 h1, h2 {
-    color: #27791e;
+    color: #458a3d;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: right;
+    font-weight: 100;
 }
 
 #wrapper {
@@ -53,8 +54,9 @@ a img {
 }
 
 h3 {
-    color: #27791e;
+    color: #458a3d;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
 }
 
 #mainContent {
@@ -78,6 +80,7 @@ h3 {
     background-repeat: no-repeat;
     background-position: top right;
     position: relative;
+    text-align: center;
 }
 
 #footer p {
@@ -118,4 +121,13 @@ h3 {
     position: absolute;
     top: 0;
     left: -65px;
+}
+
+#mainContent p:first-of-type::first-letter{
+    color: #458a3d;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 50px;
+    padding: 4px 8px 0 0;
 }

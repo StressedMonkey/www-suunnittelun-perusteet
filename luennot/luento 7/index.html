@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        div,
+        header,
+        main,
+        footer {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .container {
+            padding: 0;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: aquamarine;
+        }
+
+        .side1,
+        .side2 {
+            width: 25%;
+            float: left;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        main {
+            width: 50%;
+            float: left;
+            background-color: aliceblue;
+        }
+
+        .clearfloat {
+            clear: both;
+        }
+
+        footer {
+            background-color: beige;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        @media screen and (max-width: 959px) {
+            .container {
+                width: 100%;
+            } 
+        }
+
+        @media screen and (max-width: 767px) {
+            .side1, .side2, main {
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <div class="side1">
+            <h3>Sidebar1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita dignissimos harum. Voluptates
+                hic modi omnis laudantium dolores veritatis deleniti tenetur provident, quia consequuntur, maxime,
+                possimus blanditiis voluptatem nobis accusantium?
+            </p>
+        </div>
+        <main>
+            <h2>Maincontent</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut perferendis fuga, aliquid deserunt minus vel
+                voluptatum, accusamus illo sapiente tenetur nobis ea eos. Sequi tempora cumque eum reprehenderit est
+                modi.
+            </p>
+            <p>
+                <img src="images/kitten.jpg" alt="kisu">
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ad magnam rem facilis unde ipsam itaque,
+                deserunt id. Fuga esse repellendus voluptatibus illo ab commodi possimus nesciunt atque dolorem. Quidem?
+            </p>
+        </main>
+        <div class="side2">
+            <h3>Sidebar2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque ex dolorum quaerat a tempora earum
+                doloremque nesciunt est eos? Nesciunt reprehenderit rem quas tenetur libero nemo, sit doloremque nihil?
+            </p>
+        </div>
+        <br class="clearfloat">
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
