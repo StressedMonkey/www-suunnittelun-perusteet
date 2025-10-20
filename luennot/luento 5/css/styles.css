@@ -66,6 +66,10 @@ h3 {
     float: left;
 }
 
+.mainlink {
+    color: #458a3d;
+}
+
 .pod {
     padding: 10px 5px 0 15px;
     border: solid 1px #62B958;
@@ -124,6 +128,15 @@ h3 {
 }
 
 #mainContent p:first-of-type::first-letter{
+    color: #458a3d;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 50px;
+    padding: 4px 8px 0 0;
+}
+
+#mainp p:first-of-type::first-letter{
     color: #458a3d;
     float: left;
     font-family: Georgia;
