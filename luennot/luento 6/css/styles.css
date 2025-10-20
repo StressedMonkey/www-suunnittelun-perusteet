@@ -147,9 +147,9 @@ a img {
 .visiting #visiting a,
 .moving #moving a,
 .maplocator #maplocator a,
-.direcrory #directory a {
+.directory #directory a {
 	background: url(../images/arrow.gif) no-repeat left center;
-	color: #FF9F00;
+	color: #FFF;
 }
 
 #sidebar2 {
