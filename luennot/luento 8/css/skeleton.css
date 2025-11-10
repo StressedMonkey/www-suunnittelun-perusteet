@@ -75,9 +75,9 @@
     width: 13.3333333333%;
   }
 
-  /* .three.columns {
+  .three.columns {
     width: 22%;
-  } */
+  }
 
   .four.columns {
     width: 30.6666666667%;
@@ -461,7 +461,7 @@ label>.label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside;
+  list-style: none;
 }
 
 ol {
@@ -723,37 +723,30 @@ a img {
 }
 
 #sidebar1 {
-  background: url(../images/side1_back.jpg) no-repeat right top;
-}
-
-#mainContent {
-  background: url(../images/content_back.jpg) no-repeat right top;
-}
-
-#sidebar2 {
-  background: url(../images/side2_back.jpg) no-repeat right top;
+  
+  padding: 15px 0;
+  float: left;
+  
 }
 
 #mainWrap {
-  background: #403E8A url(../images/main_back.jpg) repeat-x;
-  
+  background: #403E8A url(../images/main_back.jpg) repeat-x; 
   border-bottom: 10px solid #36357D;
-  /* background-image: linear-gradient(#6e6ea4, #403e8a 258px); */
   color: #fff;
 }
 
 #sidebar1 ul {
   margin: 15px 0px 0 0;
   padding: 0px;
-  font-size: 105%;
   list-style: none;
 }
 
 #sidebar1 li a {
   color: #FFF;
+  font-size: 90%;
   text-decoration: none;
   display: block;
-  padding: 5px 0px 5px 40px;
+  padding: 0px 0px 0px 40px;
 }
 
 #sidebar1 li a:hover,
@@ -762,8 +755,6 @@ a img {
   color: #FF9F00;
   background: url(../images/arrow.gif) no-repeat left center;
 }
-
-
 
 #footer {
   padding: 0px 30px 0 40px;
@@ -817,13 +808,125 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #header ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 0 ;
+    margin: 0;
+  }
+
+  #header li {
+    /* margin: 5px 0 5px 0; */
+    padding: 0;
+  }
+
+  #header ul li a {
+    margin: 5px;
+    padding: 0px;
+  }
+
+  #mainWrap {
+    padding: 0px;
+
+  }
+  #sidebar1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  #sidebar1 ul {
+    margin: 0;
+    padding: 0 15px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #sidebar1 ul li {
+    margin: 5px 0 5px 0;
+    padding: 0;
+    
+  }
+
+  #sidebar1 ul li a {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  #sidebar2 {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+  }
+
+  #mainContent {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #mainContent ul li a {
+    margin-left: 20px;
+  }
+
+  #footer ul {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+    
+  }
+
+  #footer ul li a{
+    margin: 0;
+    padding: 10px;
+  }
+
+  #footer p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #footer {
+    margin: 0;
+    padding: 0;
+
+  }
+
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (max-width: 1023px) {
+  #sidebar1 {
+    width: 100%;
+
+  }
+
+  #sidebar2 {
+    width: 100%;
+  }
+
+  #mainContent {
+    width: 100%;
+  }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 1024px) {
 
 
   #header ul {
@@ -840,11 +943,12 @@ there.
     width: auto;
   }
 
-  /* #sidebar1 {
+  #sidebar1 {
     float: left;
     width: 20%;
     padding:  15px 0 0 0;
-  } */
+    background: url(../images/side1_back.jpg) no-repeat right top;
+  }
 
   #sidebar1 ul li {
     padding-right: 10px;
@@ -853,12 +957,14 @@ there.
   #sidebar2 {
     padding: 25px;
     width: 20%;
+    background: url(../images/side2_back.jpg) no-repeat right top;
   }
 
   #mainContent {
     padding: 15px;
     width: 60%;
     margin-right: 0px;
+    background: url(../images/content_back.jpg) no-repeat right top;
   }
 
   #mainContent p {
