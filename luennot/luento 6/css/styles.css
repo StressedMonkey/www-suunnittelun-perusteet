@@ -121,7 +121,6 @@ a img {
 	background: #EBEBEB;
 	padding: 15px 0;
 	background: url(../images/side1_back.jpg) no-repeat right top;
-	min-height: 200px;
 }
 
 #sidebar1 ul {
@@ -159,7 +158,6 @@ a img {
 	padding: 15px 0;
 	background: url(../images/side2_back.jpg) no-repeat right top;
 	min-height: 145px;
-
 }
 
 #sidebar2 p,
@@ -189,6 +187,7 @@ a img {
 #footer {
 	padding: 0px 30px 0 40px;
 	border-top: 10px solid "2D2D70";
+	background: #1a1b52;
 }
 
 #footer ul {
@@ -221,7 +220,8 @@ a img {
 	padding: 10px 0;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: #5C5A99;
-	width: 59%;
+	width: 100%;
+	background: #1a1b52;
 }
 
 .fltrt {
