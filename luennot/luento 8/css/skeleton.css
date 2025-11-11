@@ -984,7 +984,7 @@ there.
 
   #sidebar1 {
     float: left;
-    width: 23%;
+    width: 26%;
     padding: 20px 0 0 0;
     background: url(../images/side1_back.jpg);
     background-size: contain;
@@ -1000,14 +1000,14 @@ there.
 
   #sidebar2 {
     padding: 15px;
-    width: 17%;
+    width: 20%;
     background: url(../images/side2_back.jpg) no-repeat right top;
   }
 
   
   #mainContent {
     padding: 15px;
-    width: 60%;
+    width: 54%;
     margin-right: 0px;
     background: url(../images/content_back.jpg) no-repeat right top;
 
