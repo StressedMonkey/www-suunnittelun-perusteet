@@ -1,0 +1,78 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #082d36;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: 'Lexend Giga', monospace;
+  color: #b19377;
+  margin: 10px;
+}
+
+.container {
+  margin: 30px;
+}
+
+.navbar {
+  color: #0F4C5C;
+  margin: auto;
+  background-color: #b19377;
+  border-radius: 2px;
+  margin: 30px;
+}
+
+.navbar ul {
+  display:flex;
+  overflow: hidden;
+  justify-content: center;
+  margin: 0;
+  padding: 0 ;
+}
+
+.navbar li {
+  text-align: center;
+  padding: 20px 30px;
+  list-style: none;
+  margin: 0;
+  
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #0F4C5C;
+}
+
+
+h1, p {
+  color: #b19377;
+  font-weight: 300;
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 10px;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+    padding: 10px 10px;
+    margin: 0;
+  }
+  .navbar li a {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+

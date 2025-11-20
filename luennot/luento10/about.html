@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Minusta</title>
+  <style>
+    .minä_container {
+      display: flex;
+      margin-top: 10%;
+    }
+
+    .kuva {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      width: 40%;
+    }
+
+    .teksti {
+      width: 50%;
+    }
+
+    .tietoa_minusta {
+      font-weight: 200;
+      margin: 0;
+      padding: 0;
+    }
+
+    .kuva_minusta {
+      max-width: 80%;
+      max-height: 80%;
+      margin: 0;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 900px) {
+      .minä_container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .kuva {
+        width: 70%;
+      }
+
+      .teksti {
+        width: 90%;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .kuka_olen {
+        text-align: center;
+        font-weight: 400;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <ul>
+        <li>
+          <a class="active" href="index.html">Etusivu</a>
+        </li>
+        <li>
+          <a href="about.html">Minusta</a>
+        </li>
+        <li>
+          <a href="projects.html">Tehdyt työt</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="minä_container">
+        <div class="kuva" id="kuvan_div">
+          <img src="images/oma_kuva.png" class="kuva_minusta" alt="Kuva minusta">
+        </div>
+        <div class="teksti">
+          <p class="kuka_olen">
+            Kuka minä olen?
+          </p>
+          <p class="tietoa_minusta">
+            Olen ensimmäisen vuoden opiskelija LAB:ssa ja opiskelen tieto- ja viestintätekniikkaa. Kiinnostukseni
+            alalle syntyi työskennellessäni tele-asentajana ja päätinkin lopulta siirtyä työmaalta koneen ääreen.
+            Ala on vaativa ja vaikea oppia mutta olen kyllä huomannut, että nälkä kasvaa syödessä ja mitä enemmän
+            oppii, sitä enemmän mielenkiintoni herää erilaisiin ohjelmointi projekteihin. Itselleni mieluisinta
+            onkin ongelman ratkaisu ja sitähän tämä on. Voisin viettää päivä kausia pohtimassa ratkaisua johonkin
+            kinkkiseen ohjelmointi ongelmaan, jos vain aika riittäisi. :) Kokemusta minulla alalta on eniten 
+            tietoverkoista, tietokanta sovelluksista sekä web-kehityksestä, joista
+            sovelluskehitys on itselle ehdottomasti kaikkein mieluisinta. 
+          </p>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

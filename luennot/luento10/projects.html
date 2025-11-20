@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Tehdyt työt</title>
+  <style>
+    h1 {
+      margin: 30px 10px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .projekti_title {
+      font-weight: 400;
+      padding: 10px;
+    }
+
+    .työt_container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .projekti_body {
+      margin: 0;
+      padding: 15px;
+    }
+
+    .projekti {
+      width: 40%;
+      margin: 20px;
+      background-color: #b19377;
+      color: #0F4C5C;
+      border-radius: 5px;
+    }
+
+    .projekti_kuva {
+      width: 100%;
+      height: 300px;
+      display: block;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .projekti_teksti {
+      color: #0F4C5C;
+      margin: 0;
+      padding: 10px;
+      word-wrap: break-word;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #0F4C5C;
+      border-radius: 5px;
+      padding: 5px;
+      margin-top: 5px;
+      color: #b19377;
+      text-decoration: none;
+    }
+
+    @media (max-width: 1000px) {
+      .työt_container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .projekti {
+        width: 70%;
+        margin: 10px;
+      }
+
+      .projekti_kuva {
+        height: auto;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .projekti {
+        width: 90%;
+      }
+
+      .button {
+        margin: 10px;
+      }
+
+      .projekti_title {
+        text-align: center;
+      }
+    
+      
+    }
+
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <ul>
+      <li>
+        <a class="active" href="index.html">Etusivu</a>
+      </li>
+      <li>
+        <a href="about.html">Minusta</a>
+      </li>
+      <li>
+        <a href="projects.html">Tehdyt työt</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1>Tehtyjä töitäni</h1>
+
+    <div class="työt_container">
+      <div class="projekti">
+        <img src="images/mestariprojekti.png" class="projekti_kuva" alt="">
+        <div class="projekti_body">
+          <h3 class="projekti_title">Mestariprojekti</h3>
+          <p class="projekti_teksti">Teimme ystäväni kanssa nettisivut asiakkaan rakennussuunnittelutoimistolle
+            asiakkaan toiveiden mukaan.
+            Sivut sisälsivät projektigallerian.
+          </p>
+          <a href="https://www.mestariprojekti.fi" class="button">Vieraile sivustolla</a>
+        </div>
+      </div>
+
+      <div class="projekti">
+        <img src="images/tasapaino.png" class="projekti_kuva" alt="">
+        <div class="projekti_body">
+          <h3 class="projekti_title">Musiikkiterapia tasapaino</h3>
+          <p class="projekti_teksti">Päivitimme ystäväni kanssa asiakkaan nettisivut hänen toiveidensa mukaan.
+            Värimaailma ja yleisilme pysyivät
+            ennallaan mutta kuvia ja asetteluja hieman päivitettiin
+          </p>
+          <a href="https://www.musiikkiterapiatasapaino.fi" class="button">Vieraile sivustolla</a>
+        </div>
+      </div>
+
+      <div class="projekti">
+        <img src="images/kanta-hameen_romu.png" class="projekti_kuva" alt="">
+        <div class="projekti_body">
+          <h3 class="projekti_title">Kanta-Hämeen Romu</h3>
+          <p class="projekti_teksti">Toteutimme Urjalalaiselle yritykselle kotisivut kahdella yhteydenottolomakkeella
+          </p>
+          <a href="https://www.kantahameenromu.fi" class="button">Vieraile sivustolla</a>
+        </div>
+      </div>
+
+      <div class="projekti">
+        <img src="images/autoMarket.png" class="projekti_kuva" alt="">
+        <div class="projekti_body">
+          <h3 class="projekti_title">Selainpohjainen sovellus AutoMarket</h3>
+          <p class="projekti_teksti">Perustutkinnon päättötyönä suunnittelimme ja toteutimme selainpohjaisen autokauppa
+            sovelluksen käyttäen Node.js sekä pgAdminia.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
