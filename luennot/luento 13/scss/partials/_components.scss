@@ -25,6 +25,10 @@
   }
 }
 
+.checkbox {
+  display: none;
+}
+
 .checkbox:checked~.navbar-navigation .navbar-navigation-left {
   left: 0;
 }
@@ -85,6 +89,11 @@
   color: $color-primary;
   margin-bottom: 40px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
 }
 
 .sub-heading {
@@ -93,6 +102,11 @@
   font-weight: 300;
   color: $color-secondary;
   margin-bottom: 80px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 .main-btn {
@@ -123,6 +137,13 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 768px) {
+            width: 80%;
+            height: auto;
+            margin: auto;
+            padding: 10px;
+        }
+
   &:hover .card-overlay {
     left: 0;
   }
@@ -138,7 +159,7 @@
     left: -100%;
     background-color: rgba($color-primary, 0.3);
     color: $color-white;
-    z-index: 10;
+    z-index: 20;
     @include flexLayout;
     flex-direction: column;
     @extend %fullSpace;
@@ -164,7 +185,7 @@
       color: $color-primary;
       background-color: $color-white;
       font-family: $font-Raleway;
-      font-size: 1.5vw;
+      font-size: 16px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;

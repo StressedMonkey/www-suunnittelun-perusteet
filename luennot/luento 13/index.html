@@ -33,9 +33,9 @@
         </div>
         <div class="navbar-navigation-right">
           <ul class="nav-list">
-            <li class="nav-list-item"><a href="#" class="nav-list-link">Home</a></li>
-            <li class="nav-list-item"><a href="#" class="nav-list-link">About Us</a></li>
-            <li class="nav-list-item"><a href="#" class="nav-list-link">Gallery</a></li>
+            <li class="nav-list-item"><a href="#header" class="nav-list-link">Home</a></li>
+            <li class="nav-list-item"><a href="#about-us" class="nav-list-link">About Us</a></li>
+            <li class="nav-list-item"><a href="#gallery" class="nav-list-link">Gallery</a></li>
             <li class="nav-list-item"><a href="#" class="nav-list-link">Tips</a></li>
             <li class="nav-list-item"><a href="#" class="nav-list-link">Shop</a></li>
             <li class="nav-list-item"><a href="#" class="nav-list-link">Contact Us</a></li>
@@ -45,6 +45,7 @@
     </nav>
     <!-- End of Nav -->
     <!--Header-->
+    <a id="header"></a>
     <header class="header">
         <div class="brand">
             <div>
@@ -63,6 +64,7 @@
     </header>
     <!--End of Header-->
     <!-- About section -->
+     <a id="about-us"></a>
     <section class="about-us">
         <div class="about-us-left">
             <img src="images/about-image.png" alt="about-image" />
@@ -90,6 +92,7 @@
     </section>
     <!-- End of About section -->
     <!-- Gallery section -->
+     <a id="gallery"></a>
     <section class="gallery">
         <div class="cards-wrapper">
             <div class="card">
@@ -146,7 +149,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-header">
+            <div>
             <a href="#" class="logo"><i class="fas fa-seedling"></i></a>
+            </div>
             <div>
                 <h1 class="main-name">Gardening</h1>
                 <p class="sub-name">Tips for professionals and hobbyists</p>
@@ -185,7 +190,15 @@
         </div>
     </footer>
     <!-- End of Footer section-->
+    <script>
+        const links = document.querySelectorAll(".nav-list-link");
+        links.forEach((item) => item.addEventListener("click", closeMenu));
 
+        function closeMenu() {
+            const checkbox = document.querySelector("#check");
+            checkbox.checked = false;
+        }
+    </script>
 </body>
 
 </html>
