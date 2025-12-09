@@ -260,5 +260,10 @@
         font-size: 18px;
         color: $color-secondary;
         @include textStyles (capitalize);
+
+        @media screen and (max-width: 620px) {
+            font-size: 14px;
+            text-align: center;
+        }
     }
 }
