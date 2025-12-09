@@ -297,6 +297,8 @@ body {
   .hamburger-menu {
     width: 25px;
     height: 25px;
+    top: 3%;
+    right: 3%;
   }
 }
 .hamburger-menu .menu {
