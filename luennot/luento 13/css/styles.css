@@ -28,6 +28,12 @@ body {
   left: -50vw;
   transition: left 0.7s ease-in-out;
 }
+@media screen and (max-width: 678px) {
+  .navbar-navigation-left {
+    width: 100vw;
+    left: -100vw;
+  }
+}
 .navbar-navigation-left .left-img {
   width: 50%;
   position: absolute;
@@ -35,17 +41,40 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
+@media screen and (max-width: 678px) {
+  .navbar-navigation-left .left-img {
+    width: 60%;
+  }
+}
 .navbar-navigation-left .left-img-1 {
   top: 15%;
   left: 15%;
+}
+@media screen and (max-width: 678px) {
+  .navbar-navigation-left .left-img-1 {
+    top: 10%;
+    left: 20%;
+  }
 }
 .navbar-navigation-left .left-img-2 {
   top: 35%;
   left: 25%;
 }
+@media screen and (max-width: 678px) {
+  .navbar-navigation-left .left-img-2 {
+    top: 40%;
+    left: 20%;
+  }
+}
 .navbar-navigation-left .left-img-3 {
   top: 55%;
   left: 35%;
+}
+@media screen and (max-width: 678px) {
+  .navbar-navigation-left .left-img-3 {
+    top: 70%;
+    left: 20%;
+  }
 }
 .navbar-navigation-right {
   width: 50vw;
@@ -57,6 +86,13 @@ body {
   justify-content: center;
   align-items: center;
   transition: right 0.7s ease-in-out;
+}
+@media screen and (max-width: 678px) {
+  .navbar-navigation-right {
+    width: 100vw;
+    right: -100vw;
+    opacity: 0.8;
+  }
 }
 .navbar-navigation .nav-list-item {
   list-style: none;
@@ -87,6 +123,11 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../images/bg.jpg) center no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 450px) {
+  .header {
+    min-height: 70vh;
+  }
+}
 .header .brand {
   position: absolute;
   top: 15%;
@@ -104,6 +145,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 400px) {
+  .header-banner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .about-us {
@@ -146,7 +195,7 @@ body {
 @media screen and (max-width: 992px) {
   .about-us-right {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 30px;
   }
 }
 .about-us-right .stars {
@@ -198,8 +247,18 @@ body {
   justify-content: space-between;
   margin-bottom: 70px;
 }
+@media screen and (max-width: 400px) {
+  .footer .social-media {
+    width: 100%;
+  }
+}
 .footer .social-media-item {
   list-style: none;
+}
+@media screen and (max-width: 400px) {
+  .footer .social-media-item {
+    margin: 10px;
+  }
 }
 .footer .social-media-link {
   text-decoration: none;
@@ -228,6 +287,12 @@ body {
   right: 5%;
   z-index: 50;
 }
+@media screen and (max-width: 678px) {
+  .hamburger-menu {
+    width: 25px;
+    height: 25px;
+  }
+}
 .hamburger-menu .menu {
   display: flex;
   flex-direction: column;
@@ -241,6 +306,12 @@ body {
   background-color: #d8ae53;
   transition: all 0.5s 0.5s;
   transform-origin: right;
+  border-radius: 3px;
+}
+@media screen and (max-width: 678px) {
+  .hamburger-menu .menu-line {
+    height: 2px;
+  }
 }
 
 .checkbox {
@@ -284,6 +355,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    margin: 5px;
+  }
+}
 
 .main-name {
   font-family: "Marck Script", cursive;
@@ -294,6 +373,11 @@ body {
   letter-spacing: 2px;
   text-transform: none;
 }
+@media screen and (max-width: 400px) {
+  .main-name {
+    font-size: 35px;
+  }
+}
 
 .sub-name {
   font-family: Roboto, sans-serif;
@@ -303,6 +387,11 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 400px) {
+  .sub-name {
+    font-size: 16px;
+  }
 }
 
 .main-heading {
@@ -397,6 +486,16 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+@media screen and (max-width: 900px) {
+  .card-overlay-heading {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-overlay-heading {
+    font-size: 4vw;
+  }
+}
 .card-overlay-paragraph {
   font-family: Roboto, sans-serif;
   font-size: 2vw;
@@ -405,13 +504,23 @@ body {
   text-transform: capitalize;
   margin: 30px;
 }
+@media screen and (max-width: 900px) {
+  .card-overlay-paragraph {
+    font-size: 1.8vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-overlay-paragraph {
+    font-size: 3vw;
+  }
+}
 .card-overlay-btn {
   width: 150px;
   height: 40px;
   color: #d8ae53;
   background-color: #fff;
   font-family: Raleway, sans-serif;
-  font-size: 16px;
+  font-size: 1.5vw;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -419,4 +528,14 @@ body {
   border-radius: 20px;
   outline: none;
   cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .card-overlay-btn {
+    font-size: 1.2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-overlay-btn {
+    font-size: 2.2vw;
+  }
 }
